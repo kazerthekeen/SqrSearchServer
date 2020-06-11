@@ -51,7 +51,10 @@ public class SolutionController {
 		sm.processSolution(s);
 	} 
 	
-	public void destroy() {
-		sm.updatePrepared();
+	/*
+	@GetMapping("save")
+	public void save() {
+		sm.save();
 	}
+	*/
 }

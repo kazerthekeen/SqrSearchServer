@@ -1,5 +1,7 @@
 package com.ezplus.service;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.NoSuchElementException;
@@ -79,7 +81,16 @@ public class SolutionManager {
 	}
 
 	public List<Solution> getProgress() {
-		return Srepo.findAll();
-		
+		return Srepo.findAll();	
 	}
+	/*
+	public void save() {
+		try(FileWriter fileWriter = new FileWriter("results.json")) {
+			fileWriter.write();
+		    fileWriter.close();
+		} catch (IOException e) {
+		    // Cxception handling
+		}
+	}
+*/
 }

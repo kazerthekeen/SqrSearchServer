@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 @Entity
 @Table(name="solutions")
 public class Solution {
+	
 	@Column
 	private String result;
 	@Column

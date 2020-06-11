@@ -9,5 +9,5 @@ public class SqrSearchApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SqrSearchApplication.class, args);
 	}
-
+	
 }
