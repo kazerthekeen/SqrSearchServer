@@ -20,7 +20,7 @@ public class Solution {
 	private String status;
 	@Column
 	@Id
-	private long range;
+	private long solution_range;
 	@Column
 	private int time;
 	
@@ -28,9 +28,9 @@ public class Solution {
 		status = "Fake";
 	}
 	
-	public Solution(long range){
+	public Solution(long solution_range){
 		status = "Ready";
-		this.range = range;
+		this.solution_range = solution_range;
 	}
 	public String getResult() {
 		return result;
@@ -50,11 +50,11 @@ public class Solution {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	public long getRange() {
-		return range;
+	public long getsolution_range() {
+		return solution_range;
 	}
-	public void setRange(long range) {
-		this.range = range;
+	public void setsolution_range(long solution_range) {
+		this.solution_range = solution_range;
 	}
 	public int getTime() {
 		return time;
